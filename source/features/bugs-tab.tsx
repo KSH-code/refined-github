@@ -17,7 +17,7 @@ async function highlightBugsTabOnIssuePage(): Promise<void | false> {
 	}
 
 	const bugsTab = await elementReady('.rgh-bug-tab', {stopOnDomReady: false, timeout: 10_000});
-	bugsTab!.classList.add('selected');
+	bugsTab!.classList.add('selected');casd
 
 	const issuesTab = select('.UnderlineNav-item[data-hotkey="g i"]')!;
 	issuesTab.classList.remove('selected');
